@@ -1,0 +1,14 @@
+<!-- SSH Bruteforce Active Response -->
+<ossec_config>
+  <active-response>
+    <!-- Command to execute (ensure firewall-drop script is configured) -->
+    <command>firewall-drop</command>
+    <!-- Where to execute the command -->
+    <location>local</location>
+    <!-- Trigger this response for these rule IDs -->
+    <rules_id>100700, 100701, 100702, 100703, 5551, 5712, 5758, 5720</rules_id>
+    <!-- Duration to block the IP (in seconds) -->
+    <timeout>1800</timeout>
+  </active-response>
+</ossec_config>
+<!-- End SSH Bruteforce Active Response -->
