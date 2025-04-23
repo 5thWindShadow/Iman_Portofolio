@@ -1,0 +1,24 @@
+<!-- rules ssh bruteforce -->
+<group name="sshbrute">
+  <rule id="100700" level="10" frequency="5" timeframe="120">
+        <if_matched_sid>5760</if_matched_sid>
+        <description>Delayed SSH Bruteforce Detected (based on rule 5760).</description>
+        <options>no_full_log</options>
+    </rule>
+  <rule id="100701" level="10" frequency="5" timeframe="120">
+        <if_matched_sid>5710</if_matched_sid>
+        <description>Delayed SSH Bruteforce Detected (based on rule 5710).</description>
+        <options>no_full_log</options>
+    </rule>
+  <rule id="100702" level="10" frequency="5" timeframe="120">
+        <if_matched_sid>5503</if_matched_sid>
+        <description>Delayed SSH Bruteforce Detected (based on rule 5503).</description>
+        <options>no_full_log</options>
+    </rule>
+  <rule id="100703" level="10" frequency="2" timeframe="120">
+        <if_matched_sid>2502</if_matched_sid>
+        <description>Delayed SSH Bruteforce Detected (based on rule 2502).</description>
+        <options>no_full_log</options>
+    </rule>
+</group>
+<!-- end rules ssh bruteforce -->
