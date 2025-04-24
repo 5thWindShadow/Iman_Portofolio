@@ -1,0 +1,9 @@
+<decoder name="browser_history">
+  <prematch>^url=</prematch>
+</decoder>
+
+<decoder name="browser_history_data">
+  <parent>browser_history</parent>
+  <regex offset="after_parent">^(https://\.+), title=(\.+), visited_count=(\.+), visited_date=(\.+)</regex>
+  <order>url,title,visited_count,visited_date</order>
+</decoder>
