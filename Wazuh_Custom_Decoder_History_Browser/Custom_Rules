@@ -1,0 +1,8 @@
+<!-- rules history_browser -->
+<group name="browser_history">
+  <rule id="100800" level="4">
+        <decoded_as>browser_history</decoded_as>
+        <description>Browser History: $(url), title: $(title)</description>
+    </rule>
+</group>
+<!-- end rules history_browser -->
