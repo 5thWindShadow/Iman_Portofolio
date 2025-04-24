@@ -1,8 +1,5 @@
 # Detecting and Blocking Delayed/Slow SSH Brute-Force Attacks with Wazuh
 
-![image](https://github.com/user-attachments/assets/e3e0ef36-1130-4de0-8a79-2028ce201a8c)
-
-
 This documentation outlines a custom Wazuh configuration designed to identify and block SSH brute-force attacks, including those that employ delaying tactics (like using `timesleep`) to evade simpler detection mechanisms.
 
 ## Problem Statement
