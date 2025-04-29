@@ -79,7 +79,7 @@ Impact Factors
 | Malware | Poor Patch Management | 5.25 | 5 | Medium | SL:1/M:9/O:7/S:9/ED:3/EE:4/A:6/ID:3/LC:7/LI:7/LAV:5/LAC:7/FD:5/RD:5/NC:5/PV:5 |
 | Data Loss, System Failure, Disaster, Ransomware | Weak Backups Regulation | 6.25 | 7 | Critical | SL:1/M:9/O:9/S:9/ED:3/EE:5/A:6/ID:8/LC:9/LI:9/LAV:9/LAC:7/FD:7/RD:9/NC:7/PV:5 |
 
-
+### 5. Evaluate and Prioritize Risks
 
 
 
