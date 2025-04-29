@@ -57,5 +57,29 @@ Assets Inventory
 | Employee | Phishing | no formal security awareness training |
 | Main Server | Unathourized Access, Malicious Employee | Weak physical access control (standard lock, uncontrolled key access) |
 | Main Server | Malware | Poor Patch Management |
-| Main Server | Data Loss, System Failure, Disaster | Weak Backups Regulation |
+| Main Server | Data Loss, System Failure, Disaster, Ransomware | Weak Backups Regulation |
+
+### 4. Assess Risk
+Tools : OWASP Risk Rating Calculator
+
+Likelihood Factors
+* Threat Agent Factors (TAF) : Skill Level (SL), Motive (M), Opportunity (O), Size (S)
+* Vulnerability Factors (VF) : Ease of Discovery (ED), Ease of Exploit (EE), Awareness (A), Intrusion Detection (ID)
+
+Impact Factors
+* Technical Impact Factors (TIF) : Loss of confidentiality (LC), Loss of Integrity (LI), Loss of Availability (LAV), Loss of accountability (LAC)
+* Business Impact Factors (BIF) : Financial Damage (FD), Reputation Damage (RD), Non-Compliance (NC), Privacy Violation (PV)
+
+| Threat | Vulnerability | Likelihood Factor (LF) | Impact Factor (IF) | Overall Risk Severity | Score Vector |
+| -------- | ------------- | -------------------- | ------------------- | --------------------| ------------------|
+| System Compromise, Web Defacement | Security Misconfiguration | 6.125 | 2.75 | Medium | SL:6/M:3/O:9/S:9/ED:7/EE:5/A:7/ID:3/LC:1/LI:3/LAV:7/LAC:3/FD:1/RD:7/NC:2/PV:1 |
+| Unathourized Access | Weak Password | 5.375 | 6.75 | High |SL:6/M:6/O:7/S:7/ED:1/EE:3/A:4/ID:9/LC:9/LI:5/LAV:5/LAC:5/FD:6/RD:9/NC:7/PV:5 |
+| Phishing | No formal security awareness training | 7.25 | 6.5 | Critical | SL:6/M:9/O:9/S:9/ED:7/EE:3/A:6/ID:9/LC:7/LI:7/LAV:9/LAC:7/FD:7/RD:5/NC:9/PV:5 |
+| Unathourized Access, Malicious Employee | Weak physical access control (standard lock, uncontrolled key access) | 5 | 6.75 | High | SL:3/M:9/O:4/S:5/ED:3/EE:3/A:4/ID:9/LC:9/LI:9/LAV:9/LAC:5/FD:7/RD:9/NC:7/PV:4 |
+| Malware | Poor Patch Management | 5.25 | 5 | Medium | SL:1/M:9/O:7/S:9/ED:3/EE:4/A:6/ID:3/LC:7/LI:7/LAV:5/LAC:7/FD:5/RD:5/NC:5/PV:5 |
+| Data Loss, System Failure, Disaster, Ransomware | Weak Backups Regulation | 6.25 | 7 | Critical | SL:1/M:9/O:9/S:9/ED:3/EE:5/A:6/ID:8/LC:9/LI:9/LAV:9/LAC:7/FD:7/RD:9/NC:7/PV:5 |
+
+
+
+
 
